@@ -63,9 +63,61 @@ export default function App() {
           </TouchableOpacity>
         </View>
       </View>
-      <View styles={styles.news}>
-        <Text>News</Text>
+      <View style={styles.box}>
+        <Text style={styles.textTitle}>
+          News
+        </Text>
+
+        <View style={styles.news}>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => Alert.alert('เลือกได้ดี')}>
+            <Text style={styles.handicapText}>-2/2.5</Text>
+            <Text style={styles.ButtonText}>0.75</Text>
+
+          </TouchableOpacity>
+          <View style={styles.teamData}>
+            <Image
+              style={styles.tinyLogo}
+              source={{
+                uri: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/1200px-Arsenal_FC.svg.png',
+              }}
+            />
+            <Text style={styles.teamName}>
+              Arsenal
+            </Text>
+          </View>
+          <View style={styles.score}>
+            <Text style={styles.textScore}>
+              2
+            </Text>
+            <Text style={styles.textScore}>
+              -
+            </Text>
+            <Text style={styles.textScore}>
+              0
+            </Text>
+          </View>
+          <View>
+            <Image
+              style={styles.tinyLogo}
+              source={{
+                uri: 'https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/1200px-Manchester_United_FC_crest.svg.png',
+              }}
+            />
+            <Text style={styles.teamName}>
+              ManUTD
+            </Text>
+          </View>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => Alert.alert('คิดใหม่ ให้คิดอีกที')}>
+            <Text style={styles.handicapText}>+2/2.5</Text>
+            <Text style={styles.ButtonText}>5.0</Text>
+          </TouchableOpacity>
+        </View>
       </View>
+     
 
     </View>
 
@@ -147,7 +199,10 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
   news: {
-    backgroundColor: '#5e6745',
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 20,
+    
   },
 
 });
