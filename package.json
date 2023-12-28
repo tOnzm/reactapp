@@ -11,6 +11,7 @@
   "dependencies": {
     "@react-navigation/native": "^6.1.9",
     "@react-navigation/native-stack": "^6.9.17",
+    "@types/react-native": "^0.73.0",
     "expo": "~49.0.15",
     "expo-splash-screen": "~0.20.5",
     "expo-status-bar": "~1.6.0",
@@ -21,7 +22,8 @@
     "react-native-svg": "^14.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "stylelint-react-native": "^2.6.0"
   },
   "private": true
 }

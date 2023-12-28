@@ -32,6 +32,7 @@ const Home = ({ navigation }) => {
             source={require("../img/bs/truevisi@x2.png")}
             style={styles.logoBc}
           />
+      
         </View>
       </View>
     </View>
@@ -94,5 +95,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
+
   },
 });
